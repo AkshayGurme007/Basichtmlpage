@@ -576,7 +576,7 @@
       especially useful when you are trying to debug recursive routines.
     </p>
     <p>
-      <i>Trick #1: Indent when you print method entries and exits.</i> Often,
+      <b>Trick #1: Indent when you print method entries and exits.</b> Often,
       the best debugging technique is to print every method call and return (or
       at least the most important ones). You probably want to print, for each
       method, what parameters it came in with, and what value it leaves with.
@@ -585,7 +585,7 @@
       of nesting can help.
     </p>
     <p>
-      <i>Trick #2: Use specialized print methods for debugging.</i> Don't
+      <b>Trick #2: Use specialized print methods for debugging.</b> Don't
       clutter up your actual code more than you must. Also, remember that code
       inserted for debugging purposes can itself contain bugs, or (in the worst
       case) can affect the results, so be very careful with it.
@@ -878,7 +878,7 @@
                         <li>If the position contains a white marble, the method checks for a move or jump to the left.</li>
                     </ul>
                     <p>
-                        We write another <code>>method int[] makeMove(int[] oldBoard, int position)</code> that will take a board and a position, make a move from that position, and return as its value a new board. (We could write this somewhat more efficiently by changing the old board, rather than creating a new one, but here we are more concerned with simplicity.) In technical jargon, <code>makeMove</code> is "applicative" rather than "mutative."
+                        We write another <code>method int[] makeMove(int[] oldBoard, int position)</code> that will take a board and a position, make a move from that position, and return as its value a new board. (We could write this somewhat more efficiently by changing the old board, rather than creating a new one, but here we are more concerned with simplicity.) In technical jargon, <code>makeMove</code> is "applicative" rather than "mutative."
                     </p>
                     <p>
                         With these methods, our central backtracking method can be written as follows:
